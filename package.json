@@ -1,0 +1,28 @@
+{
+  "name": "def-error",
+  "version": "0.0.1",
+  "description": "Define errors classes accessible across node processes, on the fly. Catchable with bluebird.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test"
+  },
+  "keywords": [
+    "errors",
+    "catch",
+    "promise",
+    "class",
+    "es2015"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francoispqt/def-error.git"
+  },
+  "author": "francoispqt",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "bluebird": "3.5.0"
+  }
+}
