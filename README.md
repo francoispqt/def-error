@@ -96,6 +96,7 @@ console.log(err.foo) // bar
 ```
 
 it will be overwritten if you do it again in the second way, which is when calling the constructor :
+
 **Adding properting when calling constructor**
 ```javascript
 let err = new MyCustomError({
@@ -113,6 +114,7 @@ console.log(err.foo) // bar2
 
 #### Retrieve an error
 Retrieving an error is pretty easy, it's the same way as defining an error. If the Error already exist - indexed by name - it will be returned, else it will be created.
+
 ```javascript
 const defError = require('def-error');
 
@@ -120,7 +122,7 @@ const MyCustomError = defError('MyCustomError');
 ```
 
 #### Error store
-All errors are stored in an Object, if you call defError() with it will create the Error in the store if does not exist, otherwise it will return in.
+All errors are stored in an Object, if you call defError() it will create the Error in the store if the error does not exist, otherwise it will return a the Error class created.
 Sometimes you might want to create an Error with the same name, but with a different signature. In that case, you can create your Error in a new store.
 You can do this by two means :
 ```javascript
