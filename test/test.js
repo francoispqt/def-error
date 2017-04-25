@@ -7,7 +7,7 @@ const testShared = require('./test-shared.js');
 let defError = require('../');
 
 new Promise((resolve, reject) => {
-    reject(new (defError('TestError2'))('Oh my printer is on fire !') );
+    reject(new (defError('TestError2', { extend: class T extends Error { constructor(){ super(); this.t = 't' }} }))('Oh my printer is on fire !') );
 })
 .catch(error => {
     console.error(error, error.name);
