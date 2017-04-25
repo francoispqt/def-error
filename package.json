@@ -1,6 +1,6 @@
 {
   "name": "def-error",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Define errors classes accessible across node processes, on the fly. Catchable with bluebird.",
   "main": "index.js",
   "directories": {
